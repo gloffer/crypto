@@ -1,0 +1,34 @@
+$color-white : white;
+
+.loader {
+  background: rgba($color-white, .5);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  &__inner {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.loader-full-opacity {
+  background: rgba($color-white, 0);
+}
+
+.loader-no-opacity {
+  background: rgba($color-white, 1);
+}
